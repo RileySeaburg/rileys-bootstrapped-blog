@@ -1,6 +1,8 @@
 // Import imports
 @import 'imports';
 
-body {
-    color: rgb(226, 126, 126);
+body, nav, nav a {
+    color: rgb(0, 190, 32);
+    background-color: black;
+    text-decoration: none;
 }

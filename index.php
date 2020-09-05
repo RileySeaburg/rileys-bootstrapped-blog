@@ -11,8 +11,13 @@
         <a href="<?php the_permalink() ?>">
         <h2 class="blog-post-title"><?php the_title(  ) ?></h2>
         </a>
-        <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
-        <?php the_excerpt(  ) ?>
+        <p class="blog-post-meta"><?php the_date( ); ?> by <a href="<?php get_author_posts_url( get_the_author_meta( 'ID' )) ?>"><?php the_author_meta('nickname'); ?></a></p>
+        <?php if(has_post_thumbnail( )) : ?>
+          <div class="container post-thumbnail">
+          <?php the_post_thumbnail( ); ?>
+          </div>
+        <?php endif; ?>
+        <?php the_excerpt(  ); ?>
       </div>
       <a href="<?php the_permalink( ) ?>" class="btn btn-secondary">Read More</a><!-- /.blog-post -->
  <?php endwhile;?>
