@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-md-8">
       <h3 class="pb-4 mb-4 font-italic border-bottom">
-        From the Firehose
+        This is a work in progress.
       </h3>
  <?php if(have_posts()) : ?>
   <?php while (have_posts()) : the_post( ) ?>
