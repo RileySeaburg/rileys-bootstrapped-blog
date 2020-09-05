@@ -17,7 +17,9 @@
           <?php the_post_thumbnail( ); ?>
           </div>
         <?php endif; ?>
-        <?php the_excerpt(  ); ?>
+        <?php the_content(  ); ?>
+        <hr>
+    
       </div>
       <a href="<?php the_permalink( ) ?>" class="btn btn-secondary">Read More</a><!-- /.blog-post -->
  <?php endwhile;?>

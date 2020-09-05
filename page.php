@@ -8,21 +8,15 @@
  <?php if(have_posts()) : ?>
   <?php while (have_posts()) : the_post( ) ?>
       <div class="blog-post">
-        <a href="<?php the_permalink() ?>">
+
         <h2 class="blog-post-title"><?php the_title(  ) ?></h2>
-        </a>
-        <p class="blog-post-meta"><?php the_date( ); ?> by <a href="<?php get_author_posts_url( get_the_author_meta( 'ID' )) ?>"><?php the_author_meta('nickname'); ?></a></p>
-        <?php if(has_post_thumbnail( )) : ?>
-          <div class="container post-thumbnail">
-          <?php the_post_thumbnail( ); ?>
-          </div>
-        <?php endif; ?>
-        <?php the_excerpt(  ); ?>
+     
+        <?php the_content(  ); ?>
       </div>
       <a href="<?php the_permalink( ) ?>" class="btn btn-secondary">Read More</a><!-- /.blog-post -->
  <?php endwhile;?>
  <?php else: ?>
-  <p><?php __('No Posts Found');  ?></p>
+  <p><?php __('No Page Found');  ?></p>
 <?php endif; ?>
       <nav class="blog-pagination">
         <a class="btn btn-outline-primary" href="#">Older</a>

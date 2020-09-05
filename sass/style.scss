@@ -1,8 +1,12 @@
 // Import imports
 @import 'imports';
 
+:root {
+    font-size: 16px;
+}
+
 body, nav, nav a {
-    color: rgb(0, 190, 32);
+    color: $green;
     background-color: black;
     text-decoration: none;
 }
