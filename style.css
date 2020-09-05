@@ -1,0 +1,19 @@
+/*
+Theme Name: Riley's BootStrap Blog
+Theme URI: https://rileyseaburg.com
+Author: Riley Seaburg
+Author URI: https://rileyseaburg.com
+Description: This is the theme for my bootstrap blog. It uses bootstrap 5 & gulp. Feel free to use it. 
+Tags: blog, your blog, this is your theme for your blog,
+Version: 1.3
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU MIT
+License URI: https://www.mit.edu/~amini/LICENSE.md
+Text Domain: rileyseaburg
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import './css/style.css';
