@@ -11,34 +11,31 @@ function wpb_customize_register($wp_customize){
 
      $wp_customize->add_setting( 'showcase_image', array(
         'default' => get_bloginfo('template_directory').'img/showcase.jpg',
-        'transport' => 'refresh',
-        'sanitize_callback' => 'absint',
         'type' => 'theme_mod'
         )
       );
    
-      $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'showcase_image', array(
+      $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'showcase_image', array(
         'label' => __( 'Featured Home Page Image', 'rileysbootstrapblog' ),
         'section' => 'Landing Page',
         'settings' => 'showcase_image',
-        'mime_type' => 'image',
         'priority' => 2
       ) ) );
 
     // Test Featured Audio
 
-    // $wp_customize->add_setting( 'audio_control', array(
-    //     'default' => '',
-    //     'transport' => 'refresh',
-    //     'sanitize_callback' => 'esc_url_raw'
-    //       )
-    //   );
+    $wp_customize->add_setting( 'audio_control', array(
+        'default' => '',
+        'transport' => 'refresh',
+        'sanitize_callback' => 'esc_url_raw'
+          )
+      );
 
-    // $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'audio_control', array(
-    //     'label' => _( 'Featured Home Page Recording'),
-    //     'section' => 'media',
-    //     'mime_type' => 'audio',
-    //   ) ) );
+    $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'audio_control', array(
+        'label' => _( 'Featured Home Page Recording'),
+        'section' => 'Landing Page',
+        'mime_type' => 'audio',
+      ) ) );
 
     // Landing Page Heading
 
