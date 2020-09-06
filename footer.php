@@ -1,4 +1,4 @@
-<footer>
+<footer class="footer">
     <p class="text-center" >&copy;<?php echo Date('Y');?> RDS Ventures LLC</p>
     </footer>
     <?php wp_footer(  );  ?>
