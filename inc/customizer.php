@@ -9,17 +9,20 @@ function wpb_customize_register($wp_customize){
 
      // Add Feature Image
 
-     $wp_customize->add_setting( 'image_control', array(
-        'default' => '',
+     $wp_customize->add_setting( 'showcase_image', array(
+        'default' => get_bloginfo('template_directory').'img/showcase.jpg',
         'transport' => 'refresh',
-        'sanitize_callback' => 'esc_url_raw'
-          )
+        'sanitize_callback' => 'absint',
+        'type' => 'theme_mod'
+        )
       );
    
-      $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'image_control', array(
+      $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'showcase_image', array(
         'label' => __( 'Featured Home Page Image', 'rileysbootstrapblog' ),
         'section' => 'Landing Page',
+        'settings' => 'showcase_image',
         'mime_type' => 'image',
+        'priority' => 2
       ) ) );
 
     // Test Featured Audio
@@ -61,23 +64,23 @@ function wpb_customize_register($wp_customize){
         'priority' => 2
     ));
     // Add Button Text
-    $wp_customize->add_setting('button_text', array(
+    $wp_customize->add_setting('cta_text', array(
         'default' => _x('https://rileyseaburg.com', 'rileysbootstrapblog'),
         'type' => 'theme_mod'
     ));
 
-    $wp_customize->add_control('button_text', array(
+    $wp_customize->add_control('cta_text', array(
         'label' => __('Button Text', 'rileysbootstrapblog'),
         'section' => 'Landing Page', 
         'priority' => 3
     ));
     // Add button link
-    $wp_customize->add_setting('button_url', array(
+    $wp_customize->add_setting('cta_url', array(
         'default' => _x('Read More', 'rileysbootstrapblog'),
         'type' => 'theme_mod'
     ));
 
-    $wp_customize->add_control('button_url', array(
+    $wp_customize->add_control('cta_url', array(
         'label' => __('Button Link', 'rileysbootstrapblog'),
         'section' => 'Landing Page', 
         'priority' => 4
