@@ -34,7 +34,7 @@
     <aside class="col-md-4">
       <div class="p-4 mb-3 bg-light rounded">
         <h4 class="font-italic">About Riley Seaburg</h4>
-        <p class="mb-0">Riley is a 28 year old entrepreneur and combat veteran.His current tour of duty is as CMO of HammerSport Marketing.</p>
+        <p class="mb-0">Riley is a 28 year old entrepreneur and combat veteran. His current tour of duty is as CMO of HammerSport Marketing.</p>
       </div>
 <!-- 
       <div class="p-4">
