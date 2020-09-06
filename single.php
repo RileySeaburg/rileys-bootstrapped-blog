@@ -21,7 +21,7 @@
         <hr>
     
       </div>
-      <a href="<?php the_permalink( ) ?>" class="btn btn-secondary">Read More</a><!-- /.blog-post -->
+
  <?php endwhile;?>
  <?php else: ?>
   <p><?php __('No Posts Found');  ?></p>
