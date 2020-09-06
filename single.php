@@ -26,10 +26,10 @@
  <?php else: ?>
   <p><?php __('No Posts Found');  ?></p>
 <?php endif; ?>
-      <nav class="blog-pagination">
+      <!-- <nav class="blog-pagination">
         <a class="btn btn-outline-primary" href="#">Older</a>
         <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
-      </nav>
+      </nav> -->
 
     </div>
 
