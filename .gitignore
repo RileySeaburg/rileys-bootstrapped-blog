@@ -41,7 +41,8 @@ Thumbs.db
 **/.sass-cache
 **/.sass-cache/*
 **/.map
-sass/*
+sass/
+/sass
 # Composer #
 ##########
 !assets/js/vendor/
