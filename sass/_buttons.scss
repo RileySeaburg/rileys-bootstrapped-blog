@@ -13,4 +13,10 @@
         background-color: $blue;
         transform: scale(1.2);
     }
+    @media (max-width:720px) {
+        &.w-25 {
+            width: 30%!important;
+        }
+      }
+
 }
