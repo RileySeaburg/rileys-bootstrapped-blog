@@ -13,7 +13,7 @@ body, nav, nav a {
 
 a {
     text-decoration: none;
-    h2 {
+    & .h2, h2 {
         color: $black;
     }
 }
