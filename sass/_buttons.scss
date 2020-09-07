@@ -7,4 +7,10 @@
 
 .btn-secondary {
     margin-bottom: 1rem;
+    background-color: $blue;
+    border: none;
+    &:hover {
+        background-color: $blue;
+        transform: scale(1.2);
+    }
 }

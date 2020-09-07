@@ -7,7 +7,7 @@
       </h3>
  <?php if(have_posts()) : ?>
   <?php while (have_posts()) : the_post( ) ?>
-      <div class="blog-post">
+      <div class="blog-post bg-light rounded p-2 mb-4">
         <a href="<?php the_permalink() ?>">
         <h2 class="blog-post-title"><?php the_title(  ) ?></h2>
         </a>
@@ -19,7 +19,11 @@
         <?php endif; ?>
         <?php the_excerpt(  ); ?>
       </div>
-      <a href="<?php the_permalink( ) ?>" class="btn btn-secondary">Read More</a><!-- /.blog-post -->
+      <div class="d-flex justify-content-end">
+<a href="<?php the_permalink( ) ?>" class="btn btn-secondary text-right w-25 text-center py-2" style="font-size: 1.25rem;" >Read More</a><!-- /.blog-post -->
+</div>
+   
+
  <?php endwhile;?>
  <?php else: ?>
   <p><?php __('No Posts Found');  ?></p>
